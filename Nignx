@@ -1,0 +1,12 @@
+server {
+    listen 80;
+    server_name duaa42.github.io;
+    root /duaa42.github.io/fruits-website;
+
+    index index.html;
+
+    location / {
+        try_files $uri $uri/ =404;
+    }
+}
+
